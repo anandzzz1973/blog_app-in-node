@@ -1,0 +1,39 @@
+<%- include("partials/header.ejs") %>
+
+<div class="container">
+     <div class="jumbotron" style="width: 70%; margin: 25px auto;">
+        <center> <h1>This is content adding page</h1></center>
+          
+     
+           <form action="/blogs" method="POST">
+               <div class="form-group">
+                   <label for="">Title</label>
+                    <input class="form-control" type="text" name="title" placeholder="title">
+               </div>
+               <div class="form-group">
+                <label for="">Title</label> 
+                    <input class="form-control" type="text" name="image" placeholder="image url">
+               </div>   
+               <div class="form-group">
+                <label for="">Title</label>
+                <br>
+                <textarea name="desc" id="" cols="96" rows="5"></textarea>
+                    <!-- <input class="form-control" type="text" name="desc" placeholder="description"> -->
+               </div>            
+               <div class="form-group">
+                    <button class="btn btn-primary btn-lg btn-block" type="submit">Submit</button>
+               </div>
+          </form>
+
+          <div class="form-group">
+               <form action="/blogs">
+                    <button type="submit" class="btn btn-danger btn-lg btn-block">click for view Blog</button>
+               </form>
+          </div>
+     </div>
+     
+</div>
+
+
+
+<%- include("partials/footer.ejs") %>
